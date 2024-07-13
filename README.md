@@ -2,139 +2,8 @@
 ### HNG Boilerplate stage 3   Documentation
 
 ## Overview
-This is the API documentation for the HNG Boilerplate API. You can use this API to manage users, organizations, emails, payments, and settings.
+This is the API documentation for the NodeNinja Team HNG Boilerplate API. You can use this API to manage users, organizations, emails, payments, and settings.
 
-## Folder Structure
-```
-|--- src
-|    |--- controllers
-|         |--- v1
-|    |--- database
-|    |--- interfaces
-|    |--- middlewares
-|    |--- routes
-|         |--- v1
-|    |--- services
-|    |--- utils
-|    |--- server.ts
-|--- .env
-|--- app.ts
-|--- .gitignore
-|--- package.json
-|--- tsconfig.json
-```
-
-## Dependencies (Dev)
-- Node.js
-- TypeScript
-- Express
-- ts-node-dev
-- [Other dependencies]
-
-## Getting Started
-
-### Prerequisites
-Before you begin, ensure you have the following installed on your machine:
-- Node.js (v14 or later)
-- npm (Node Package Manager, included with Node.js)
-- Git
-
-### Contribution Guide
-
-#### Getting Started
-1. **Install Git**
-   - If you don't have Git on your machine, [install it](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-
-2. **Fork this Repository**
-   - Fork this repository by clicking on the fork button on the top of this page. This will create a copy of this repository in your account.
-
-3. **Clone the Repository**
-   - Clone this repository to your machine. Go to your GitHub account, open the forked repository, click on the code button, and then click the copy to clipboard icon.
-   ```bash
-   git clone "url you just copied"
-   ```
-
-   Example:
-   ```bash
-   git clone git@github.com:your-username/[app-name].git
-   ```
-   - Change to the repository directory on your computer:
-   ```bash
-   cd [app-name]
-   ```
-
-4. **Create a Branch**
-   - Now create a branch using the `git switch` command:
-   ```bash
-   git switch -c your-new-branch-name
-   ```
-
-5. **Make Changes**
-   - Make your changes to the codebase. Ensure your code follows the project's coding standards and guidelines.
-
-6. **Run Tests**
-   - Run the existing tests to ensure your changes do not break anything. If you added new functionality, write corresponding tests.
-   ```bash
-   npm run test
-   ```
-
-7. **Commit Changes**
-   - Add your changes to the branch you just created using the `git add` command:
-   ```bash
-   git add .
-   ```
-
-8. **Push Changes to GitHub**
-   - Push your changes using the command:
-   ```bash
-   git push -u origin your-branch-name
-   ```
-
-9. **Submit Your Changes for Review**
-   - If you go to your repository on GitHub, you'll see a `Compare & pull request` button. Click on that button to submit the pull request.
-
-## Setup Instructions
-
-### 1. Clone the Repository
-First, clone the repository to your local machine using Git.
-```bash
-git clone https://github.com/your-username/[app-name].git
-cd [app-name]
-```
-
-### 2. Install Dependencies
-Navigate to the project directory and install the required dependencies.
-```bash
-npm install
-```
-
-### 3. Configure Environment Variables
-Create a `.env` file in the root directory of the project and add your environment-specific variables. You can use the provided `.env.example` file as a reference.
-```bash
-cp .env.example .env
-```
-Edit the `.env` file to match your environment configuration.
-
-### 4. Compile TypeScript
-Compile the TypeScript code to JavaScript.
-```bash
-npm run build
-```
-
-### 5. Run the Development Server
-Start the development server with the following command. This will also watch for any changes in your code and automatically restart the server.
-```bash
-npm run start:dev
-```
-
-### 6. Run the Production Server
-To run the application in a production environment, use the following command:
-```bash
-npm run start
-```
-
-### 7. Verify the Setup
-Open your browser and navigate to `http://localhost:3000/api/v1/` to verify that the application is running correctly.
 
 ## Database Design
 Here’s the database schema used in the project:
@@ -213,7 +82,9 @@ Here’s the database schema used in the project:
 - `joined_at` (timestamp)
 
 ## API Endpoints
-All API endpoints are defined in the OpenAPI specification. Here's a summary:
+All API endpoints are defined in the OpenAPI specification. Here's a summary:n 
+
+OpenApi Api design : https://app.swaggerhub.com/apis/DANIELMWIHOTI_1/Node-project/1.0.0
 
 ### User Endpoints
 - **POST /api/users/register**: Register a new user
