@@ -267,6 +267,52 @@ paths:
                 $ref: '#/components/schemas/ActivityLogsResponse'
         "404":
           description: Activity logs not found
+
+    /api/notifications/{userId}:
+    get:
+      tags:
+      - Notifications
+      summary: Get user's notifications
+      parameters:
+      - name: userId
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      responses:
+        "200":
+          description: User notifications retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Notifications'
+        "404":
+          description: User not found
+
+   /api/notifications/{notificationId}/read:
+    put:
+      tags:
+      - Notifications
+      summary: Get single notification
+      parameters:
+      - name: notificationId
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      responses:
+        "200":
+          description: Notification marked as read
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Notifications'
+        "404":
+          description: Notification not found
 components:
   schemas:
     UserRegistration:
@@ -480,3 +526,20 @@ components:
               timestamp:
                 type: string
                 format: date-time
+      
+        NotificationResponse:
+          type: object
+          properties:
+          notifications:
+          type: array
+          items:
+          type: object
+          properties:
+            id:
+              type: integer
+            message:
+              type: string
+            is_read: 
+              type: boolean
+            created_at: 
+              type: timestamp

@@ -7,4 +7,6 @@ Ibrahim4grace tag @Akorede email ibrahim4grace@gmail.com
 slackid: demiladeogo , email:demiladealuko111@gmail.com
 
 
-slackid: PearlBlaze, email:imoudoh2025@gmail.com
+PerfectPearl slackID: @PearlBlaze, email:cimoudoh2025@gmail.com
+
+
