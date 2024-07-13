@@ -7,7 +7,8 @@ This is the API documentation for the NodeNinja Team HNG Boilerplate API. You ca
 
 ## Database Design
 Here’s the database schema used in the project:
-
+<img src='static/Screenshot from 2024-07-13 10-38-34.png' alt='database' />
+<img src='static/Screenshot from 2024-07-13 10-38-41.png' alt='database2' />
 
 ![Database Schema](file:///mnt/data/WhatsApp%20Image%202024-07-13%20at%2007.20.04.jpeg)
 
