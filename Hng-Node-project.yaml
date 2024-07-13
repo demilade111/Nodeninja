@@ -3,7 +3,7 @@ info:
   title: HNG Boilerplate API
   description: |
     This is the API documentation for the HNG Boilerplate API.
-    You can use this API to manage users, organizations, emails, payments, and settings.
+    You can use this API to manage users, organizations, emails, payments, activity logs, and settings.
   contact: {}
   version: 1.0.0
 servers:
@@ -253,6 +253,20 @@ paths:
                 $ref: '#/components/schemas/UserSettings'
         "404":
           description: User not found
+  /api/activity-logs:
+    get:
+      tags:
+      - Activity Logs
+      summary: Get activity logs
+      responses:
+        "200":
+          description: Activity logs retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ActivityLogsResponse'
+        "404":
+          description: Activity logs not found
 components:
   schemas:
     UserRegistration:
@@ -449,3 +463,20 @@ components:
           type: object
           additionalProperties:
             type: string
+    ActivityLogsResponse:
+      type: object
+      properties:
+        logs:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: integer
+              user_id:
+                type: integer
+              action:
+                type: string
+              timestamp:
+                type: string
+                format: date-time

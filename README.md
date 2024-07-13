@@ -109,6 +109,9 @@ OpenApi Api design : https://app.swaggerhub.com/apis/DANIELMWIHOTI_1/Node-projec
 ### Settings Endpoints
 - **GET /api/settings/{userId}**: Get user settings
 
+### Activity Logs Endpoints
+- **GET /api/activity-logs**: Get activity logs
+
 ## Scripts
 Here are some useful npm scripts that you can use during development and production:
 - `npm run build`: Compiles the TypeScript code to JavaScript.
