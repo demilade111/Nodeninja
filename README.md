@@ -86,7 +86,7 @@ Here’s the database schema used in the project:
 ## API Endpoints
 All API endpoints are defined in the OpenAPI specification. Here's a summary:n 
 
-OpenApi Api design : https://app.swaggerhub.com/apis/DANIELMWIHOTI_1/Node-project/1.0.0
+OpenApi Api design : [https://app.swaggerhub.com/apis/DANIELMWIHOTI_1/Node-project/1.0.0](https://app.swaggerhub.com/apis/DANIELMWIHOTI_1/Node-project/1.0.0#/UserLogin)
 
 ### User Endpoints
 - **POST /api/users/register**: Register a new user
